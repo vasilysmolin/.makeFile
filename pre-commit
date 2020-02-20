@@ -1,0 +1,27 @@
+#!/usr/bin/php
+<?php
+
+$path = dirname(__FILE__, 3);
+$pathCbf = "phpcbf --standard='" . $path . "/phpcs.xml'";
+$pathCS = "phpcs --standard='" . $path . "/phpcs.xml'";
+
+echo "Linting PSR2 started in path " . $path . "\n";
+exec($pathCbf, $output, $code);
+
+echo "Count errors " . $code . " \n" ;
+
+if ($code !== 0 ) {
+  echo "Git add - files from linter add in this commit  \n";
+  exec("cd " . $path . " && git add .");
+} 
+
+echo "Checking for remaining... \n";
+exec($pathCS, $sniffOutput, $sniffCode);
+
+if ($sniffCode !== 0) {
+    var_dump($sniffOutput);
+    exit(1);
+}
+
+echo "Linting PSR2 success____________\n";
+

@@ -1,0 +1,15 @@
+#!/usr/bin/php
+<?php
+
+
+$projectName = basename(getcwd());
+echo 'Starting unit tests'.PHP_EOL;
+exec('vendor/bin/phpunit', $output, $returnCode);
+if ($returnCode !== 0) {
+  echo "Aborting commit \n";
+  exit(1);
+}
+
+echo "Unit tests success____________\n";
+
+exit(0);
