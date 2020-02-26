@@ -1,6 +1,6 @@
 prog:
 	sudo apt update
-	sudo apt -y upgrade
+	sudo apt-get update
 	sudo snap install postman
 	wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.0.2-amd64.deb
     sudo apt install ./slack-desktop-*.deb
@@ -12,9 +12,13 @@ prog:
     sudo add-apt-repository ppa:nilarimogard/webupd8
     sudo apt update && sudo apt install gnome-twitch
     sudo apt remove gnome-twitch
+    sudo add-apt-repository ppa:linuxuprising/shutter
+    sudo apt-get update
+    sudo apt install shutter
+    sudo apt install gnome-web-photo
 utils:
     sudo apt update
-    sudo apt -y upgrade
+    sudo apt-get update
     sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
     curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
     sudo apt -y install nodejs
@@ -24,6 +28,7 @@ utils:
     sudo apt install git
     sudo apt install nginx
     sudo service nginx start
+    sudo service nginx restart
     sudo apt install redis-server
     sudo apt-get install software-properties-common python-software-properties
     sudo add-apt-repository -y ppa:ondrej/php
@@ -37,18 +42,17 @@ utils:
     sudo apt-get install composer
     sudo apt install php-codesniffer
     sudo apt-get install php-xdebug
+    sudo apt-get install supervisor
 www:
     sudo usermod -aG www-data vasily
     cd /var/www/ && sudo chown -R www-data:www-data .
-    cd /var/www/ &&  sudo find . -type f -exec chmod 664 {} \;
+    cd /var/www/ &&  sudo find . -type f -exec chmod 775 {} \;
     cd /var/www/ &&  sudo find . -type d -exec chmod 775 {} \;
     sudo ln -s /etc/nginx/sites-available/beautyboxl.ru /etc/nginx/sites-enabled/
     sudo usermod -a -G www-data vasily
     sudo apt update
-    sudo apt install apt-transport-https ca-certificates curl software-properties-common
-    curl -fsSL https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-    sudo add-apt-repository "deb https://download.sublimetext.com/ apt/stable/"
     ssh-keygen
+    sudo ssh-keygen
     sudo cat /root/.ssh/id_rsa.pub
     cat ~/.ssh/id_rsa.pub
     ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
