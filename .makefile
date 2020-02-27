@@ -61,6 +61,11 @@ www:
     cd /var/www/ && git@github.com:SPITIRU/beautybox-crm.git
     openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout /etc/nginx/ssl/beautyboxl.key -out /etc/nginx/ssl/beautyboxl.crt
     openssl dhparam -out /etc/nginx/ssl/dhparam.pem 4096
+    ssh-copy-id -i ~/.ssh/id_rsa vasily@domain.ru
+    vi ~/.ssh/config
+    ssh bb
+    useradd -m -G ssh,sudo,adm,www-data vasily -s /bin/bash
+    sudo passwd vasily
 
 
 

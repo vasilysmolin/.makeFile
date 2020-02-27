@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="19c95a45-37af-495d-a927-dc12387f20ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.makefile" beforeDir="false" afterPath="$PROJECT_DIR$/.makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,13 +48,34 @@
       <workItem from="1582200968667" duration="1123000" />
       <workItem from="1582202980808" duration="607000" />
       <workItem from="1582265227813" duration="1162000" />
+      <workItem from="1582710244202" duration="714000" />
     </task>
+    <task id="LOCAL-00001" summary="c">
+      <created>1582710346766</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582710346766</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="c" />
+    <option name="LAST_COMMIT_MESSAGE" value="c" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="522" y="67" width="865" height="917" key="CommitChangelistDialog2" timestamp="1582710346690">
+      <screen x="0" y="27" width="1920" height="1000" />
+    </state>
+    <state x="522" y="67" width="865" height="917" key="CommitChangelistDialog2/0.27.1920.1000/1920.0.1920.1080@0.27.1920.1000" timestamp="1582710346690" />
+    <state x="555" y="262" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1582710350628">
+      <screen x="0" y="27" width="1920" height="1000" />
+    </state>
+    <state x="555" y="262" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1000/1920.0.1920.1080@0.27.1920.1000" timestamp="1582710350628" />
     <state x="2536" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1582200989146">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
