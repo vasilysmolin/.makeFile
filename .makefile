@@ -43,6 +43,7 @@ utils:
     sudo apt install php-codesniffer
     sudo apt-get install php-xdebug
     sudo apt-get install supervisor
+    sudo apt-get install php7.2-gm
 www:
     sudo usermod -aG www-data vasily
     cd /var/www/ && sudo chown -R www-data:www-data .
@@ -66,6 +67,7 @@ www:
     ssh bb
     useradd -m -G ssh,sudo,adm,www-data vasily -s /bin/bash
     sudo passwd vasily
+    sudo update-alternatives --set php /usr/bin/php7.2
 docker:
     sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
     sudo chmod +x /usr/local/bin/docker-compose

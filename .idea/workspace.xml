@@ -53,7 +53,8 @@
       <workItem from="1582800403914" duration="130000" />
       <workItem from="1582808075250" duration="608000" />
       <workItem from="1582867536786" duration="1801000" />
-      <workItem from="1583231688315" duration="935000" />
+      <workItem from="1583231688315" duration="2236000" />
+      <workItem from="1587456114052" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="c">
       <created>1582710346766</created>
@@ -69,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582800514808</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="docker-compose">
+      <created>1583232680097</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583232680097</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,17 +86,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="c" />
     <MESSAGE value="ssh" />
-    <option name="LAST_COMMIT_MESSAGE" value="ssh" />
+    <MESSAGE value="docker-compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker-compose" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="522" y="67" width="865" height="917" key="CommitChangelistDialog2" timestamp="1582800514705">
+    <state x="522" y="67" width="865" height="917" key="CommitChangelistDialog2" timestamp="1583232679876">
       <screen x="0" y="27" width="1920" height="1000" />
     </state>
-    <state x="522" y="67" width="865" height="917" key="CommitChangelistDialog2/0.27.1920.1000/1920.0.1920.1080@0.27.1920.1000" timestamp="1582800514705" />
-    <state x="555" y="262" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1582800523470">
+    <state x="522" y="67" width="865" height="917" key="CommitChangelistDialog2/0.27.1920.1000/1920.0.1920.1080@0.27.1920.1000" timestamp="1583232679876" />
+    <state x="555" y="262" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1583232684710">
       <screen x="0" y="27" width="1920" height="1000" />
     </state>
-    <state x="555" y="262" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1000/1920.0.1920.1080@0.27.1920.1000" timestamp="1582800523470" />
+    <state x="555" y="262" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1000/1920.0.1920.1080@0.27.1920.1000" timestamp="1583232684710" />
     <state x="2536" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1582200989146">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
